@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+<div class="container cart">
+    <header class="header">
+        <div class="title">
+            购物车(3)
+        </div>
+    </header>
+    <div class="cart-lists">
+        <!--<div class="food-item">-->
+            <!--<img src="asset/food-1.jpg" alt="food_img">-->
+            <!--<div class="item-content">-->
+                <!--<h4>香辣鸡腿堡</h4>-->
+                 <!--<p class="sm-sub">库存3件</p>-->
+                <!--<p class="sm-sub">本月销售10件</p>-->
+                <!--<p class="price"><span class="icon-price">￥</span>12-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="choose">-->
+                <!--<div class="circle remove" data-type="remove"></div>-->
+                <!--<div class="buy_number">1</div>-->
+                <!--<div class="circle add" data-type="add"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+    <div class="buy">
+        <div class="buy-info">
+            <!--<p>一共<span class="price-count">3</span>个美食，合计：<span class="price"><span class="icon-price">￥</span>36</span></p>-->
+        </div>
+        <button class="btn-buy">结算</button>
+    </div>
+    <footer class="nav">
+        <div class="home">
+            <a href="index.html">
+                <i class="icon icon-home"></i>首页
+            </a>
+        </div>
+        <div class="cart active">
+            <a href="cart.html" class="cart">
+                <i class="icon icon-cart"></i>购物车
+            </a>
+        </div>
+        <div class="ucenter">
+            <a href="ucenter.html" class="user">
+                <i class="icon icon-user"></i>我的美食
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(function () {
+        Cart();
+        $(".btn-buy").click(function () {
+            Buy();
+        })
+
+
+    })
+</script>
+</body>
+</html>

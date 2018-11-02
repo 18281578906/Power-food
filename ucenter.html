@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ucenter</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a href="index.html">&lt; Back</a>
+        <div class="title">我的账户</div>
+        <a href="#" id="btn-lg">注销</a>
+    </header>
+    <div class="u-banner">
+        <div class="u-bg"></div>
+        <div class="user">
+            <img src="asset/user.jpg" class="u-img" alt="img">
+            <p class="u-name"><a href="login.html" style="color: #fff;text-decoration: none">点击登录</a></p>
+        </div>
+    </div>
+    <div class="u-content">
+        <div class="tools">
+            <h4 class="u-title">管理员工具</h4>
+            <ul class="tools-item">
+                <li><a href="add_food.html"><i class="t-icon icon-add"></i>添加菜式</a></li>
+                <li><a href="report.html"><i class="t-icon icon-report"></i>查看收入报表</a></li>
+                <li><a href="userlist.html"><i class="t-icon icon-userlist"></i>查看用户列表</a></li>
+                <li><a href="#"><i class="t-icon icon-orderlist"></i>查看交易列表</a></li>
+            </ul>
+        </div>
+        <div class="orders">
+            <h4 class="u-title">我的订单</h4>
+            <!--<div class="orders-item">-->
+                <!--<div class="order-content">-->
+                    <!--<img src="asset/food-1.jpg" alt="img">-->
+                    <!--<div class="order-main">-->
+                        <!--<h4>香辣鸡腿堡</h4>-->
+                        <!--<p class="sub">购买于:2018年5月8日</p>-->
+                    <!--</div>-->
+                    <!--<div class="order-price">-->
+                        <!--<p>￥12</p>-->
+                        <!--<p class="order-num">x2</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="order-state">-->
+                    <!--<p>一共1件商品，合计：<span>￥24</span></p>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <a href="#" class="btn-lg">注销账号</a>
+    </div>
+    <footer class="nav">
+        <div class="home">
+            <a href="index.html">
+                <i class="icon icon-home"></i>首页
+            </a>
+        </div>
+        <div class="cart">
+            <a href="cart.html" class="cart">
+                <i class="icon icon-cart"></i>购物车
+            </a>
+        </div>
+        <div class="ucenter active">
+            <a href="ucenter.html" class="user">
+                <i class="icon icon-user"></i>我的美食
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(function () {
+
+        $(".btn-lg,#btn-lg").click(function () {
+            Logout();
+        });
+        Ucenter();
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+        .displ{
+            display: block!important;
+        }
+        .flex{
+            display: flex!important;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <label class="flex">
+            <i class="icon icon-search"></i>
+            <input type="search" class="search" placeholder="搜索美食">
+        </label>
+        <a href="#"><i class="icon icon-cascades"></i></a>
+    </header>
+    <div class="icon-circle"></div>
+    <div class="category">
+        <div class="c-item">
+            <img src="asset/food-1.jpg" alt="img">
+            <p>汉堡</p>
+        </div>
+        <div class="c-item">
+            <img src="asset/food-4.jpg" alt="img">
+            <p>蛋糕</p>
+        </div>
+        <div class="c-item">
+            <img src="asset/food-5.jpg" alt="img">
+            <p>披萨</p>
+        </div>
+        <div class="c-item">
+            <img src="asset/food-6.jpg" alt="img">
+            <p>意面</p>
+        </div>
+        <div class="c-item">
+            <img src="asset/food-7.jpg" alt="img">
+            <p>牛排</p>
+        </div>
+
+    </div>
+    <div class="food-lists"></div>
+    <div class="food-lists"></div>
+    <div class="food-lists"></div>
+    <div class="food-lists"></div>
+    <div class="food-lists"></div>
+    <footer class="nav">
+        <div class="home active">
+            <a href="index.html">
+                <i class="icon icon-home"></i>首页
+            </a>
+        </div>
+        <div class="cart">
+            <a href="cart.html" class="cart">
+                <i class="icon icon-cart"></i>购物车
+            </a>
+        </div>
+        <div class="ucenter">
+            <a href="ucenter.html" class="user">
+                <i class="icon icon-user"></i>我的美食
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(function () {
+        Index();
+
+    })
+</script>
+</body>
+</html>

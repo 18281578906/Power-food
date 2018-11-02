@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a href="index.html" class="previous">&lt; Back</a>
+        <a href="index.html">完成</a>
+    </header>
+    <form class="form" action="" method="post" target="iframe">
+        <label for="img" class="uploadImg">
+            + <img src="" class="uploadShow">
+        </label>
+        <input id="img" type="file" name="img" style="display:none">
+        <input type="text" class="input" name="name" placeholder="请输入菜式名" required>
+        <input type="number" class="input" name="price" placeholder="请输入价格" required>
+        <input type="number" class="input"  name="num" placeholder="请输入数量" required>
+        <select name="category" class="input" required>
+            <option value="">未选择分类</option>
+            <option value="汉堡">汉堡</option>
+            <option value="蛋糕">蛋糕</option>
+            <option value="披萨">披萨</option>
+            <option value="意面">意面</option>
+            <option value="牛排">牛排</option>
+        </select>
+        <textarea name="description" placeholder="请输入菜式简介"></textarea>
+        <button class="btn-lg">编辑菜式</button>
+    </form>
+    <iframe src="" name="iframe" style="display: none" frameborder="0"></iframe>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(function () {
+Edit();
+    })
+</script>
+</body>
+</html>
