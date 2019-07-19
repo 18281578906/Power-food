@@ -43,7 +43,7 @@
 所用api接口
 ------
 1.	Login 
-
+```
 url: api/login  
 description：在客户端通过用户名和密码来获取令牌（token）  
 Request method：POST  
@@ -586,6 +586,6 @@ Response result:
 *注意
 [ ] 参数为可选参数，其他均为必选参数。
 
-
+```
 
 
