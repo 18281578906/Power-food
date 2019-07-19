@@ -42,8 +42,24 @@
 
 所用api接口
 ------
-1.	Login 
+•  http://localhost/powerfood/api/public/images/* (服务器中图片保存的位置)
+•  http://localhost/powerfood/api/register (所有注册用户均为user角色，而admin角色已内置)
+•  http://localhost/powerfood/api/login
+•  http://localhost/powerfood/api/logout?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/menu?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/menu/{id}/edit?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api//menu/{id}?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/cart?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/buy?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/order?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/report/{year}?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/user?token={AUTHORIZATION_TOKEN}
+•  http://localhost/powerfood/api/ulist?token={AUTHORIZATION_TOKEN}
+
+#### 接口文档
 ```
+1.	Login 
+
 url: api/login  
 description：在客户端通过用户名和密码来获取令牌（token）  
 Request method：POST  
