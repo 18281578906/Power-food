@@ -1,17 +1,4 @@
 
-//* (服务器中图片保存的位置)
-//
-// http://gzittc.net/powerfood/api/login
-//{AUTHORIZATION_TOKEN}
-// http://gzittc.net/powerfood/api/menu?token={AUTHORIZATION_TOKEN}
-// http://gzittc.net/powerfood/api/menu/{id}/edit?token={AUTHORIZATION_TOKEN}
-// http://gzittc.net/powerfood/api//menu/{id}?token={AUTHORIZATION_TOKEN}
-// http://gzittc.net/powerfood/api/cart?token={AUTHORIZATION_TOKEN}
-
-// {AUTHORIZATION_TOKEN}
-
-// http://gzittc.net/powerfood/api/user?token={AUTHORIZATION_TOKEN}
-// http://gzittc.net/powerfood/api/ulist?token={AUTHORIZATION_TOKEN}
 var string='http://gzittc.net/powerfood/public/images/';
 function Register() {
     $('.btn-lg').click(function () {
