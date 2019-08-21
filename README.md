@@ -38,7 +38,7 @@
 
 开发环境：
 -------
-```html,css,javascript,jquery,bootstrap```
+```html,css,javascript,jquery```
 
 所用api接口
 ------
